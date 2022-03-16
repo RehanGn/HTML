@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajistration Form</title>
+    <style>
+        body {
+            font-size: 20px;
+            background-color: #a2b9bc;
+        }
+    </style>
+</head>
+<body>
+    <form action="/myaction.php" name="myForm" onsubmit="'return'; validateForm()" method="post">
+        <div class="myclass" id="myid">
+            Name:
+            <input type="text" name="fname" placeholder="Enter your name"><b><span class="formerro"></span></b>
+        </div>
+        <div class="class2" id="myid2">
+            Email:
+            <input type="email" name="email" placeholder="Enter your email"><b><span class="formerro"></span></b>
+        </div>
+        <div class="class3" id="myid3">
+            Mobail:
+            <input type="text" name="number" placeholder="Enter your mobail no"><b><span class="formerro"></span></b>
+        </div>
+        <div class="class4" id="myid4">
+            DOB:
+            <input type="date" name="date">
+        </div>
+        <div class="class5" id="myid5">
+        facebook:
+        <input type="email" name="email">
+    </div>
+        <div class="class6" id="myid6">
+          Documents:
+          <input type="file" name="document">
+        </div>
+        <input type="submit" name="submit" value="submit">
+          <input type="reset" name="reset" value="reset">
+    </form>
+</body>
+
+<script>
+    function seterror(id, error){
+       element = document.getElementById(id);
+       element.getElementByClassName('formerro')[0].innerHtml = error;
+    }
+    function validateForm(){
+        var returnvalur = true;
+        var name = document.forms['myForm']['fname'].value;
+        if(name.lenth<5){
+            seterror("name", "Lenth of short name not accept")
+        }
+        return false;
+    }
+</script>
+</html>
