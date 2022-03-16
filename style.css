@@ -1,0 +1,25 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-image: url(sgvu.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+    line-height: 30px;
+    
+}
+.myclass {
+    margin-top: 1px;
+}
+input {
+    font-size: 20px;
+    border-radius: 2px;
+    width: 400px;
+}
