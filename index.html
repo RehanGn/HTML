@@ -4,62 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>link</title>
-    <style>
-      .myclass {
-        color: white;
-        background-color: black;
-        font-size: 30px;
-        text-align: center;
-      }
-      .container{
-        background-color: green;
-      }
-      .body {
-        background-color: green;
-      }
-      
-        li:nth-child(2n+2){
-          color:red;
-          font-size: 30px;
-          background-color: aqua ;
-        }
-        li:nth-child(n+1){
-          color: blueviolet;
-          
-        }
-        
-      
-    </style>
+    <title>Date </title>
 </head>
 <body>
-  <div class="container"></div>
-  <div class="myclass">
-    <a href="https://www.google.com" target="_blank">Google</a>
-    <a href="https://www.facebook.com" target="_blank">facebook</a>
-  </div>
-<ul type = "square">
-  <li>This is a simple list</li>
-  <li>This is a simple list</li>
-  <li>This is a simple list</li>
-  <li>This is a simple list</li>
-  <li>This is a simple list</li>
-  <li>This is a simple list</li>
-  <li>This is a simple list</li>
-  <li>This is a simple list</li>
-  <li>This is a simple list</li>
-</ul>
-<ol type="A">
-  <li>This is a simple list</li>
-  <li>This is a simple list</li>
-  <li>This is a simple list</li>  <li>This is a simple list</li>
-  <li>This is a simple list</li>
-  <li>This is a simple list</li>
-  <li>This is a simple list</li>
-  <li>This is a simple list</li>
-  <li>This is a simple list</li>
-</ol>
-</div>
+    <h1>This is Currently Date</h1>
+    <button type="button" onclick="showDate()">ShowDate</button>
+    <div id="date"></div>
+    <script>
+        showDate = function() {
+            let date = document.getElementById("date");
+            date.innerHTML = new Date();
+        }
+    </script>
 </body>
-</html>
 </html>
